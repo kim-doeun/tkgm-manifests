@@ -1,0 +1,15 @@
+- name: tkgm-mgmt-att-07
+  namespace: tkg-system
+  status: running
+  plan: dev
+  controlplane: 1/1
+  workers: 1/1
+  kubernetes: v1.22.8+vmware.1
+  roles:
+  - management
+  labels:
+    cluster-role.tkg.tanzu.vmware.com/management: ""
+    networking.tkg.tanzu.vmware.com/avi: ""
+    networking.tkg.tanzu.vmware.com/avi-skip-default-adc: ""
+    tanzuKubernetesRelease: v1.22.8---vmware.1-tkg.1
+    tkg.tanzu.vmware.com/cluster-name: tkgm-mgmt-att-07
